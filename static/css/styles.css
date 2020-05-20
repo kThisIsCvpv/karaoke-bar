@@ -1,0 +1,74 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: cadetblue;
+    overflow-x: hidden;
+    background-image: url("/assets/pexels-photo-733475.jpeg");
+    background-size: cover;
+}
+
+.swal-title, .swal-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.casual-tab, .competitive-tab, .create-tab {
+    height: min(30vh, 30vw);
+    width: min(30vh, 30vw);
+    max-height: min(30vh, 30vw);
+    max-width: min(30vh, 30vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 20px;
+    background-color: darkturquoise;
+}
+
+.casual-tab:hover, .competitive-tab:hover, .create-tab:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.casual-tab:active, .competitive-tab:active, .create-tab:active {
+    position: relative;
+    top: 1px;
+}
+
+.main-body h1, p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.tabs img {
+    object-fit: cover;
+    max-height: 50%;
+    max-width: 50%;
+}

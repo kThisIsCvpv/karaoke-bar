@@ -1,0 +1,107 @@
+.publisher-background {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.publisher-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    border-radius: 20px;
+    padding: 20px;
+    border: black solid 1px;
+}
+
+#publisher-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#publisher-form label, button {
+    margin: 20px 10px 10px 10px;
+}
+
+#publisher-form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#publisher-form button, input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#publisher-form input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#publisher-form .form-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#publisher-form .cancel-button {
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color: #d0451b;
+    border-radius: 3px;
+    border: 1px solid #942911;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #854629;
+}
+
+#publisher-form .cancel-button:hover {
+    background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    background-color: #bc3315;
+}
+
+#publisher-form .cancel-button:active {
+    position: relative;
+    top: 1px;
+}
+
+#publisher-form .submit-button {
+    box-shadow: inset 0px 1px 0px 0px #30d949;
+    background: linear-gradient(to bottom, #48cf1b 5%, #41ad26 100%);
+    background-color: #48cf1b;
+    border-radius: 3px;
+    border: 1px solid #10bd07;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b5ffc4;
+}
+
+#publisher-form .submit-button:hover {
+    background: linear-gradient(to bottom, #41ad26 5%, #48cf1b 100%);
+    background-color: #41ad26;
+}
+
+#publisher-form .submit-button:active {
+    position: relative;
+    top: 1px;
+}

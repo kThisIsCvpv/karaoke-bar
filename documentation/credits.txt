@@ -1,0 +1,30 @@
+Images:
+
+	Pexels:
+		- https://www.pexels.com/photo/photography-of-night-sky-733475/
+		
+	WallpaperSet
+		- https://wallpaperset.com/night-sky-backgrounds
+		
+	IconArchive:
+		http://www.iconarchive.com/
+		
+	Flaticon:
+		https://www.flaticon.com/
+	
+	CoolText Graphics Generator:
+		https://cooltext.com/
+	
+	CSS Button Generator:
+		https://www.bestcssbuttongenerator.com/
+	
+	YouTube Video Logos:
+		https://www.youtube.com
+
+Code:
+
+	w3schools:
+		- https://www.w3schools.com/css/default.asp
+		- https://www.w3schools.com/js/default.asp
+	
+	

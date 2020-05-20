@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sign Up</title>
+    <link href="/css/login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="form-section">
+        <h1 id="title">Sign up</h1>
+
+        <form class="form">
+            <input type="text" name="username" class="input form_element" placeholder="Enter a username" required />
+            <input type="email" name="email" class="input form_element" placeholder="Enter an email" required />
+            <input type="password" name="password" class="input form_element" placeholder="Enter a password" required />
+            <div>
+                <button id="signup" name="action" class="btn">Sign up</button>
+            </div>
+        </form>
+
+        <div class="links">
+            <a href="/login" class="link">Use an existing account</a>
+        </div>
+
+        <script src="/js/login.js"></script>
+        <script src="/js/sweetalert.min.js"></script>
+    </div>
+</body>
+
+</html>

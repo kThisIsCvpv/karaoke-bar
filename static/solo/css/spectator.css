@@ -1,0 +1,92 @@
+.spectator-divider {
+    color: white;
+    margin: 20px 0px;
+    max-width: 70vw;
+    width: 70vw;
+}
+
+.song-image {
+    width: 100%;
+    max-width: 100%;
+    height: 20vh;
+    max-height: 20vh;
+}
+
+.song-image img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.song-details {
+    margin: 30px 0px;
+}
+
+.song-details h1, .song-details h2 {
+    margin: 5px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.song-lyrics {
+    margin: 30px 0px;
+}
+
+.game-state {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-state h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#final-score {
+    margin: 0px;
+}
+
+.game-state img {
+    height: min(40vh, 40vw);
+    width: min(40vh, 40vw);
+    object-fit: contain;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#join-room-button {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 10px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+    margin: 40px;
+}
+
+#join-room-button:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+}
+
+#join-room-button:active {
+    position: relative;
+    top: 1px;
+}

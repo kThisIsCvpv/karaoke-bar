@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Karaoke Playlist</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/alerts.css" rel="stylesheet" type="text/css" />
+    <link href="css/query.css" rel="stylesheet" type="text/css" />
+    <link href="css/player.css" rel="stylesheet" type="text/css" />
+    <link href="css/canvas.css" rel="stylesheet" type="text/css" />
+
+    <script src="/js/sweetalert.min.js"></script>
+    <script src="/js/SFMediaStream.min.js"></script>
+    <script src="/js/p5.min.js"></script>
+    <script src="/js/p5.sound.min.js"></script>
+    <script src="/js/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="body-style">
+        <div class="loading-header">
+            <img src="assets/logo-loading.gif" />
+        </div>
+
+        <script type="text/javascript">
+            console.log('Started!');
+            let socket = io();
+
+            let stream = new ScarletsAudioStreamer(1000);
+            stream.playStream();
+
+            let started = false;
+
+            socket.on('bufferHeader', function (packet) {
+                if (packet) {
+                    console.log('Recieved header packet.');
+                    stream.setBufferHeader(packet);
+                    started = true;
+                }
+            });
+
+            socket.on('stream', function (packet) {
+                if (packet) {
+                    console.log('Recieved stream packet.');
+                    if (started)
+                        stream.realtimeBufferPlay(packet);
+                    else {
+                        console.log('No header. Aborting...');
+
+                        socket.emit('requestHeader');
+                        console.log('Requesting packet again.');
+                    }
+                } else {
+                    console.log('Packet is invalid?');
+                }
+            });
+
+            socket.emit('requestHeader');
+            console.log('Requesting packet.');
+        </script>
+    </div>
+</body>
+
+</html>
